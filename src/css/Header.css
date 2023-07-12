@@ -1,0 +1,15 @@
+@import 'variables.css';
+.header-bg{
+    font-family: Manrope;
+    background: var(--primary-color);
+}
+.link-font{
+    color: white;
+    font-weight: 500;
+    font-size: 22px;
+}
+.title-font{
+    font-weight: 500;
+    font-size: 26px;
+    text-align: center;
+}
