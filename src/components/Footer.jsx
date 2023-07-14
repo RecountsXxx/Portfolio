@@ -16,10 +16,10 @@ class Footer extends Component{
                     </div>
                     <span className="mb-3 mb-md-0 text-white ms-2">© 2022 Bogdan Kapriyan</span>
                     <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
-                        <li className="ms-3"><a className="text-white" href="#">
+                        <li className="ms-3"><a className="text-white" href="https://github.com/RecountsXxx">
                             <img src={github_logo} alt="..."/>
                         </a></li>
-                        <li className="ms-3 me-3"><a className="text-white" href="#">
+                        <li className="ms-3 me-3"><a className="text-white" href="https://www.linkedin.com/in/bogdan-kapriyan-80487120b/">
                             <img src={linkedin_logo} alt="..."/>
                         </a></li>
                     </ul>

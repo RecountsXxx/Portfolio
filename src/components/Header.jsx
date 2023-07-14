@@ -17,18 +17,18 @@ class Header extends Component{
                     <div className="collapse navbar-collapse justify-content-between" id="navbarNav">
                         <ul className="ms-5 navbar-nav d-flex justify-content-between me-5">
                             <li className="nav-item">
-                                <a className="nav-link link-font" aria-current="page" href="#">Projects</a>
+                                <a className="nav-link link-font" aria-current="page" href="#projects">Projects</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link link-font" href="#">Technologies</a>
+                                <a className="nav-link link-font" href="#technologies">Technologies</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link link-font" href="#">About me</a>
+                                <a className="nav-link link-font" href="#about">About me</a>
                             </li>
                         </ul>
                         <div className="ms-5 navbar-brand" href="#">
-                            <a href="#"><img className="me-2" src={github_logo} alt="..."/></a>
-                            <a href="#"><img className="ms-2" src={linkedin_logo} alt="..."/></a>
+                            <a href="https://github.com/RecountsXxx"><img className="me-2" src={github_logo} alt="..."/></a>
+                            <a href="https://www.linkedin.com/in/bogdan-kapriyan-80487120b/"><img className="ms-2" src={linkedin_logo} alt="..."/></a>
                         </div>
                     </div>
                 </div>

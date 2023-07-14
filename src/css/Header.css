@@ -1,6 +1,5 @@
 @import 'variables.css';
 .header-bg{
-    font-family: Manrope;
     background: var(--primary-color);
 }
 .link-font{
