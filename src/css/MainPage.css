@@ -73,6 +73,7 @@
     }
     .projects-grid img{
         min-height: 200px;
+        max-height: 250px;
     }
     .technologies-bar{
         width: 280px;
