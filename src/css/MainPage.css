@@ -1,7 +1,6 @@
 .flow-around{
     color: #333;
     line-height: 1.5;
-    transform: rotate(1deg);
     text-align: center;
     margin: 0;
     padding: 15px;
@@ -57,6 +56,38 @@
     flex-wrap: wrap;
 }
 .list-item {
-    flex-basis: calc(33.33% - 10px); /* Ширина элемента - 33.33% минус отступы */
-    margin: 5px; /* Отступы между элементами */
+    flex-basis: calc(33.33% - 10px);
+    margin: 5px;
+}
+.about-div{
+    margin-left: 45px;
+    margin-top: 45px;
+}
+@media(max-width: 768px){
+    .projects-grid{
+        flex-direction: column;
+    }
+    .projects-grid div{
+        width: 280px;
+        height: 500px;
+    }
+    .technologies-bar{
+        width: 280px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    .list-item{
+        flex-basis: 100%;
+    }
+    .addition-text{
+        margin-left: 30px;
+    }
+    .decoration-img{
+        display: none;
+    }
+    .about-div{
+        margin: 0px;
+    }
 }
