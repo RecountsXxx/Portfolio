@@ -54,9 +54,9 @@ class MainPage extends Component{
                       </div>
                       <div className="d-flex justify-content-center">
                           <img src="https://img.icons8.com/fluency/240/refresh.png" alt="..."/>
-                          <h3 className="mt-2">Convertor PNG to SVG</h3>
-                          <h5 className="text-secondary">PNG is a raster format, while SVG is a vector format, which provides scalability without loss of quality. Users can import PNG files and the application converts their SVG vector objects. The result can be previewed and saved to a computer or device. This application is useful for designers and developers.</h5>
-                          <a href="https://github.com/RecountsXxx/convertorpngtosvg">Look it up</a>
+                          <h3 className="mt-2">Weather View</h3>
+                          <h5 className="text-secondary">The "WeatherApp" project on Angular is a web application for viewing the weather and forecast for 3 days in different cities. The app uses the OpenWeather API to get up-to-date weather information. The main functionality of the application includes:City search and selection: The user can enter the name of the city in the search field, after which the application will offer options for suitable cities for selection.Current Weather View: After selecting a city, the user can view the current weather, including temperature, humidity, wind speed and other parameters.3 Day Forecast: The app displays the weather forecast for the next 3 days, allowing the user to plan activities and prepare for weather changes.</h5>
+                          <a href="https://github.com/RecountsXxx/Weather-View">Look it up</a>
                       </div>
                       <div className="d-flex justify-content-center">
                           <img src="https://img.icons8.com/color/512/cryptocurrency.png" alt="..."/>
