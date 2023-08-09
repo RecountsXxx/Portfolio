@@ -18,7 +18,27 @@ class Project {
 
 
 class MainPage extends Component{
+    projects = [
+        new Project("Chater","Chater is an advanced messaging application that allows " +
+            "users to chat, call other friends and share files. Our application offers a convenient " +
+            "and secure way to communicate, a choice of functions and customization for " +
+            "specific users. The application is written in, c# server is tcp client, audio calls are c# " +
+            "is udp client, c# main application is tcp client.", "https://img.icons8.com/color/480/chat--v1.png","https://github.com/RecountsXxx/chater"),
 
+        new Project("Portfolio","Browsing through my page, you will find a rich set " +
+            "of technologies that I own. From front-end development using modern programming languages ​​such as " +
+            "HTML, CSS and JavaScript, to creating dynamic web applications using popular " +
+            "frameworks such as React and Angular.", "https://img.icons8.com/color/480/resume.png","https://github.com/RecountsXxx/portfolio"),
+
+        new Project("Weather-View","The WeatherApp project on Angular is a web application for " +
+            "viewing the weather and forecast for 3 days in different cities. The main functionality of " +
+            "the application includes: Current Weather View: After selecting a city, the user can view the current weather," +
+            " including temperature, humidity, wind speed and other parameters." ,"https://img.icons8.com/arcade/512/partly-cloudy-rain.png","https://github.com/RecountsXxx/weather-view"),
+
+        new Project("Shopper","The store created on React. Store offers a wide range of appliances and perfumes, providing convenience" +
+            " to customers through an advanced filtering and search system. Shoppers can easily find the products they are " +
+            "interested in by applying a variety of filters such as brand, price, features, and product type. ts by keywords.","https://img.icons8.com/fluency/512/small-business.png","https://github.com/RecountsXxx/shopper")
+    ];
 
     render() {
         return(
@@ -40,30 +60,14 @@ class MainPage extends Component{
               <div className="projects mt-5">
                   <h1 className="text-white flow-around">Projects</h1>
                   <div id="projects"  className="projects-grid">
+                      {this.projects.map((project) => (
                           <div className="d-flex justify-content-center">
-                              <img src="https://img.icons8.com/color/480/chat--v1.png" alt="..."/>
-                              <h3 className="mt-2">Chater(С#)</h3>
-                              <h5 className="text-secondary">Chater is an advanced messaging application that allows users to chat, call other friends and share files. Our application offers a convenient and secure way to communicate, a choice of functions and customization for specific users. The application is written in, c# server is tcp client, audio calls are c# is udp client, c# main application is tcp client.</h5>
-                              <a href="https://github.com/RecountsXxx/chater">Look it up</a>
+                              <img src={project.image} alt="..."/>
+                              <h3 className="mt-2">{project.title}</h3>
+                              <h5 className="text-secondary">{project.description}</h5>
+                              <a href={project.url}>Look it up</a>
                           </div>
-                      <div className="d-flex justify-content-center">
-                          <img src="https://img.icons8.com/color/480/resume.png"alt="..."/>
-                          <h3 className="mt-2">Portfolio</h3>
-                          <h5 className="text-secondary">Browsing through my page, you will find a rich set of technologies that I own. From front-end development using modern programming languages ​​such as HTML, CSS and JavaScript, to creating dynamic web applications using popular frameworks such as React and Angular.</h5>
-                          <a href="https://github.com/RecountsXxx/Portfolio">Look it up</a>
-                      </div>
-                      <div className="d-flex justify-content-center">
-                          <img src="https://img.icons8.com/arcade/512/partly-cloudy-rain.png" alt="..."/>
-                          <h3 className="mt-2">Weather View</h3>
-                          <h5 className="text-secondary">The "WeatherApp" is a weather forecasting web application built using Angular. It utilizes the OpenWeather API to provide real-time weather information for various cities. The main features of the application include: City Search and Selection: Users can easily search for a specific city by entering its name in the search field.</h5>
-                          <a href="https://github.com/RecountsXxx/Weather-View">Look it up</a>
-                      </div>
-                      <div className="d-flex justify-content-center">
-                          <img src="https://img.icons8.com/arcade/512/bank.png" alt="..."/>
-                          <h3 className="mt-2">Blue Bank</h3>
-                          <h5 className="text-secondary">Simple banking application based on PHP, React and MySQL to manage accounts, transfers and view transaction history. Functions: User registration and authentication. View balance and available funds. Making transfers between accounts. View transaction history. Technologies: PHP, React, MySQL.</h5>
-                          <a href="https://github.com/RecountsXxx/Blue-Bank">Look it up</a>
-                      </div>
+                          ))}
                   </div>
               </div>
 
