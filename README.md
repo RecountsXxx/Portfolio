@@ -11,7 +11,6 @@ Section "Skills":
 Here you can present your skill set related to programming and development.
 Skills can be organized into categories such as Programming Languages, Frameworks, Databases, and so on.
 Each skill can be accompanied by a description and skill level.
-Раздел "Проекты":
 
 Section "Projects":
 In this section you can present your completed projects.
