@@ -3,8 +3,7 @@ import logo from '../assets/logo.svg';
 import github_logo from '../assets/logo_github.svg';
 import linkedin_logo from '../assets/logo_linkedin.svg';
 import '../css/Header.css';
-class Header extends Component{
-    render() {
+export default function Header(){
         return(
             <nav className="navbar navbar-expand-lg navbar-dark header-bg border-bottom py-3 ms-3 me-3">
                 <div className="container-fluid">
@@ -34,6 +33,4 @@ class Header extends Component{
                 </div>
             </nav>
         );
-    }
 }
-export default Header;

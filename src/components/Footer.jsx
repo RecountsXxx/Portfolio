@@ -3,8 +3,7 @@ import github_logo from "../assets/logo_github.svg";
 import linkedin_logo from "../assets/logo_linkedin.svg";
 import logo from '../assets/logo.svg';
 import '../css/Footer.css';
-class Footer extends Component{
-    render() {
+export default function Footer(){
         return(
             <div className="container-fluid footer-bg">
                 <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
@@ -26,6 +25,4 @@ class Footer extends Component{
                 </footer>
             </div>
         );
-    }
 }
-export default Footer;
