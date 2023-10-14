@@ -5,27 +5,27 @@
     margin: 0;
     padding: 15px;
 }
-.projects-grid{
+.projects-grid {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-.projects-grid div{
-    min-width: 330px;
-    max-width: 350px;
-    min-height: 650px;
-    max-height: 680px;
+
+.project {
+    width: calc(33.33% - 20px); /* Распределение по 3 элемента в строке */
+    margin: 10px;
+    text-align: center;
     color:white;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     border-radius: 25px 5px 25px 5px;
     border: white 1px solid;
     box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.2);
     padding: 20px;
-    margin: 10px;
 }
+
 .projects-grid img{
     min-width: 300px;
     max-width: 350px;
